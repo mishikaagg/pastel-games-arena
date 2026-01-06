@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="game-container">
+        <a href="../index.html"
+            style="display: block; text-align: left; margin-bottom: 5px; text-decoration: none; color: #94A3B8; font-weight: 500; font-size: 0.8rem;">←
+            BACK TO ARENA</a>
+        <header>
+            <div class="user-info">
+                <span id="userDisplayName">Player</span>
+                <h1><span>✨</span> PASTEL SNAKE GAME <span>🐍</span></h1>
+                <div id="livesContainer" class="lives-container">
+                    <span class="heart">❤️</span>
+                    <span class="heart">❤️</span>
+                    <span class="heart">❤️</span>
+                </div>
+            </div>
+            <div class="score-board">
+                <div class="score-item">
+                    <span class="label">SCORE</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">BEST</span>
+                    <span id="highScore">0</span>
+                </div>
+                <button id="pauseBtn" class="btn-icon">⏸</button>
+            </div>
+        </header>
+
+        <div class="pause-cloud">
+            <p>PRESS <span>SPACEBAR</span><br>TO PAUSE THE GAME</p>
+        </div>
+
+        <div class="canvas-wrapper">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+            <div id="startInstruction" class="start-instruction hidden">
+                <div class="heart-shape">
+                    <p>PRESS ANY KEY<br>TO START</p>
+                </div>
+            </div>
+
+            <div id="startScreen" class="overlay">
+                <h2>READY?</h2>
+                <div class="input-group">
+                    <input type="text" id="usernameInput" placeholder="Enter Username" maxlength="15">
+                </div>
+                <p>Use Arrow Keys to Move</p>
+                <button id="startBtn" class="btn">START GAME</button>
+            </div>
+
+            <div id="gameOverScreen" class="overlay hidden">
+                <h2>GAME OVER</h2>
+                <div class="game-over-stats">
+                    <p>Final Score: <span id="finalScore">0</span></p>
+                </div>
+
+                <div class="leaderboard">
+                    <h3>🏆 TOP SCORES</h3>
+                    <ul id="leaderboardList">
+                        <!-- Scores will be injected here -->
+                    </ul>
+                </div>
+
+                <button id="restartBtn" class="btn">TRY AGAIN</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

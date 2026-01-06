@@ -1,0 +1,127 @@
+:root {
+    --bg-color: #F8FAFC;
+    --primary: #F472B6;
+    /* Pink */
+    --secondary: #A5F3FC;
+    /* Blue */
+    --accent: #E9D5FF;
+    /* Lavender */
+    --text: #334155;
+    --font-family: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text);
+    font-family: var(--font-family);
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.arena-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--primary);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+p.subtitle {
+    color: #94A3B8;
+    font-size: 1.2rem;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.game-tile {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid transparent;
+}
+
+.game-tile:hover {
+    transform: translateY(-10px);
+    border-color: var(--secondary);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.game-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.game-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+.game-desc {
+    color: #64748B;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Snake Tile Specific */
+.tile-snake {
+    background: linear-gradient(135deg, #FFF, #FBCFE8);
+}
+
+.tile-memory {
+    background: linear-gradient(135deg, #FFF, #CFFAFE);
+}
+
+.tile-placeholder {
+    opacity: 0.7;
+    cursor: default;
+}
+
+.tile-placeholder:hover {
+    transform: none;
+    border-color: transparent;
+}
+
+.badge {
+    background: var(--secondary);
+    color: #0E7490;
+    padding: 4px 12px;
+    border-radius: 99px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.badge.coming-soon {
+    background: #E2E8F0;
+    color: #64748B;
+}
