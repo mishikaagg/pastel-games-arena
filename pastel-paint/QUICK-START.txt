@@ -1,0 +1,35 @@
+========================================
+  PASTEL PAINT - QUICK START GUIDE
+========================================
+
+EASIEST WAY TO START:
+---------------------
+Just double-click: LAUNCH-PASTEL-PAINT.bat
+
+That's it! The app will open automatically.
+
+========================================
+
+WHAT HAPPENS:
+-------------
+1. Server starts automatically
+2. Browser opens automatically  
+3. You can start coloring!
+
+========================================
+
+IMPORTANT:
+----------
+- Keep the minimized "Pastel Paint Server" window open
+- Close it when you're done
+
+========================================
+
+IF THE LAUNCHER DOESN'T WORK:
+------------------------------
+1. Open PowerShell in this folder
+2. Type: python -m http.server 8000
+3. Press Enter
+4. Open: http://localhost:8000/index.html
+
+========================================

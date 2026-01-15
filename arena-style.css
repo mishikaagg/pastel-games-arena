@@ -101,6 +101,14 @@ p.subtitle {
     background: linear-gradient(135deg, #FFF, #CFFAFE);
 }
 
+.tile-paint {
+    background: linear-gradient(135deg, #FFF, #F0E6FF);
+}
+
+.tile-tic-tac-toe {
+    background: linear-gradient(135deg, #FFF, #FEF3C7);
+}
+
 .tile-placeholder {
     opacity: 0.7;
     cursor: default;

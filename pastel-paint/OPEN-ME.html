@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Start Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        h1 { text-align: center; }
+        .step {
+            background: rgba(255,255,255,0.2);
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        code {
+            background: rgba(0,0,0,0.3);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 20px 0;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+        }
+        .button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Start Pastel Paint Server</h1>
+        <p>To use all features (fill tool, undo/redo, save), you need to run a local server.</p>
+        
+        <div class="step">
+            <h3>Step 1: Open PowerShell</h3>
+            <p>Press <code>Windows Key + X</code>, then click "Windows PowerShell" or "Terminal"</p>
+        </div>
+        
+        <div class="step">
+            <h3>Step 2: Navigate to the folder</h3>
+            <p>Type this command and press Enter:</p>
+            <code>cd "C:\Work\mishika-projects\snake-game-2\pastel-paint"</code>
+        </div>
+        
+        <div class="step">
+            <h3>Step 3: Start the server</h3>
+            <p>Type this command and press Enter:</p>
+            <code>python -m http.server 8000</code>
+        </div>
+        
+        <div class="step">
+            <h3>Step 4: Open in browser</h3>
+            <p>Once you see "Serving HTTP on 0.0.0.0 port 8000", click the button below:</p>
+            <a href="http://localhost:8000/index.html" class="button" target="_blank">Open Pastel Paint 🎨</a>
+        </div>
+        
+        <p style="margin-top: 30px; font-size: 14px; opacity: 0.8;">
+            💡 <strong>Tip:</strong> Keep the PowerShell window open while using the app!
+        </p>
+    </div>
+</body>
+</html>

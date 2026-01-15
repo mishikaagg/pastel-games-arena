@@ -1,6 +1,6 @@
-# 🎮 Pastel Games Arena ✨
+# 🎮 Games Arena ✨
 
-Welcome to the **Pastel Games Arena**, a collection of beautiful, child-friendly games designed with a soothing pastel aesthetic and premium feel.
+Welcome to the **Games Arena**, a collection of beautiful, child-friendly games designed with a soothing pastel aesthetic and premium feel.
 
 ## 🚀 Live Demo
 You can view the main arena lobby at `index.html`.
